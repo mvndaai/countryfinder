@@ -2,7 +2,10 @@
 #How to build a new project:
 # docker-compose build composer
 # docker-compose run composer
-# php composer.phar create-project luracast/restler {projectName}
+# php /composer.phar create-project luracast/restler {projectName}
 composer:
   build: ./composer/
+  volumes:
+    - "./project:/project"
+  working_dir: '/project'
   command: bash
