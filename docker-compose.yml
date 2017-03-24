@@ -1,0 +1,8 @@
+
+#How to build a new project:
+# docker-compose build composer
+# docker-compose run composer
+# php composer.phar create-project luracast/restler {projectName}
+composer:
+  build: ./composer/
+  command: bash
