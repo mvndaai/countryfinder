@@ -1,10 +1,20 @@
 
+#RUN the server:
+server:
+  build: ./docker/run/
+  volumes:
+    - "./project/cf/public:/var/www/html"
+  ports:
+    - "80:80"
+    - "443:443"
+
+
 #How to build a new project:
 # docker-compose build composer
 # docker-compose run composer
 # php /composer.phar create-project luracast/restler {projectName}
 composer:
-  build: ./composer/
+  build: ./docker/composer/
   volumes:
     - "./project:/project"
   working_dir: '/project'
