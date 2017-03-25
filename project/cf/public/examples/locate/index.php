@@ -35,6 +35,5 @@ require_once '../../../vendor/restler.php';
 use Luracast\Restler\Restler;
 
 $r = new Restler();
-$r->addAPIClass('Math');
+$r->addAPIClass('Locate');
 $r->handle();
-
