@@ -21,7 +21,9 @@ http://localhost/restler/public/locate/index.php/locate/find
 If you know the an IP you can pass it to the url.
 
 Example: This link will return "Peru"
+
 http://localhost/restler/public/locate/index.php/locate/find?ip=132.157.0.0
 
 And this link "Romania"
+
 http://localhost/restler/public/locate/index.php/locate/find?ip=5.2.128.0
