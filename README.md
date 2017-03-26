@@ -8,4 +8,4 @@ docker-compose up server
 ```
 
 ## Go the the page
-http://localhost/restler/public/examples/locate/index.php/locate/find
+http://localhost/restler/public/locate/index.php/locate/find
