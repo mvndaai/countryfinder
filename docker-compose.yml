@@ -1,8 +1,9 @@
 #Run the server:
 server:
-  build: ./docker/run/
+  image: php:7.0-apache
   volumes:
     - "./project/cf:/var/www/html/restler"
+  # net: host
   ports:
     - "80:80"
     - "443:443"

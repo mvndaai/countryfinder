@@ -13,6 +13,11 @@ class Locate
         $countryDetails = file_get_contents('https://restcountries.eu/rest/v2/alpha?codes='.$countryCode);
         $country = json_decode($countryDetails)[0]->{'name'};
 
+        print_r($_SERVER);
+        print_r(getallheaders());
+        print_r(apache_response_headers());
+
         return $country;
+        //return $_SERVER['REMOTE_ADDR'];
     }
 }
